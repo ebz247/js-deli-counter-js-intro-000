@@ -1,15 +1,15 @@
-function takeANumber(addToArray, person){
-  addToArray.push(person);
-  var arrayLength = addToArray.length;
-  var personPosition = 1 + addToArray.indexOf(person);
+function takeANumber(currentLine, person){
+  currentLine.push(person);
+  var arrayLength = currentLine.length;
+  var personPosition = 1 + currentLine.indexOf(person);
   return `Welcome, ${person}. You are number ${personPosition} in line.`;
 }
 
-function nowServing(addToArray) {
-  if(addToArray.length < 1) {
+function nowServing(currentLine) {
+  if(currentLine.length < 1) {
     return "There is nobody waiting to be served!"
   } else {
-    return "Currently serving " + addToArray[0];
-    addToArray.shift(addToArray[0]);
+    return "Currently serving " + currentLine[0];
+    currentLine.shift(currentLine[0]);
   }
 }
