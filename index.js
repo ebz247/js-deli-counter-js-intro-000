@@ -13,3 +13,7 @@ function nowServing(katzDeliLine) {
     katzDeliLine.shift(katzDeliLine[0]);
   }
 }
+
+function currentLine(katzDeliLine){
+  
+}
