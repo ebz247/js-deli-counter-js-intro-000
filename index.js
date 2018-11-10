@@ -23,5 +23,5 @@ function currentLine(katzDeliLine){
     countdown --;
     i++;
  }
- return `${message} ${katzDeliLine}`;
+ return `${message}${katzDeliLine}`;
 }
