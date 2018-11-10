@@ -16,5 +16,12 @@ function nowServing(katzDeliLine) {
 
 function currentLine(katzDeliLine){
  var message = "The line is currently ";
+ var countdown = katzDeliLine.length
+ var i = 0
+ while(countdown > 0){
+   katzDeliLine[i] = 1+i + ". " + katzDeliLine[i];
+    countdown --;
+    i++;
+ }
  return `${message} ${katzDeliLine}`;
 }
