@@ -1,15 +1,15 @@
-function takeANumber(currentLine, person){
-  currentLine.push(person);
-  var arrayLength = currentLine.length;
-  var personPosition = 1 + currentLine.indexOf(person);
+function takeANumber(katzDeliLine, person){
+  katzDeliLine.push(person);
+  var arrayLength = katzDeliLine.length;
+  var personPosition = 1 + katzDeliLine.indexOf(person);
   return `Welcome, ${person}. You are number ${personPosition} in line.`;
 }
 
-function nowServing(currentLine) {
-  if(currentLine.length < 1) {
+function nowServing(katzDeliLine) {
+  if(katzDeliLine.length < 1) {
     return "There is nobody waiting to be served!"
   } else {
-    console.log ("Currently serving " + currentLine[0] + ".");
-    currentLine.shift(currentLine[0]);
+    console.log ("Currently serving " + katzDeliLine[0] + ".");
+    katzDeliLine.shift(katzDeliLine[0]);
   }
 }
