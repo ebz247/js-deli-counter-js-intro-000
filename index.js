@@ -1,22 +1,22 @@
-function takeANumber(currentPeople, person){
-  var arrayLength = currentPeople.length;
-  var personPosition = 1 + currentPeople.indexOf(person);
+function takeANumber(katzDeliLine, person){
+  var arrayLength = katzDeliLine.length;
+  var personPosition = 1 + katzDeliLine.indexOf(person);
 
-  if(currentPeople.length < 1) {
-    currentPeople[0] = person;
+  if(katzDeliLine.length < 1) {
+    katzDeliLine[0] = person;
   } else {
-    currentPeople.push(person);
+    katzDeliLine.push(person);
   }
 
 
   return `Welcome, ${person}. You are number ${personPosition} in line.`;
 }
 
-function nowServing(currentPeople) {
-  if(currentPeople.length < 1) {
+function nowServing(katzDeliLine) {
+  if(katzDeliLine.length < 1) {
     return "There is nobody waiting to be served!"
   } else {
-    return "Currently serving " + currentPeople[0];
-    currentPeople.shift(currentPeople[0]);
+    return "Currently serving " + katzDeliLine[0];
+    katzDeliLine.shift(katzDeliLine[0]);
   }
 }
