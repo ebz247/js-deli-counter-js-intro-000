@@ -9,7 +9,7 @@ function nowServing(currentLine) {
   if(currentLine.length < 1) {
     return "There is nobody waiting to be served!"
   } else {
-    return "Currently serving " + currentLine[0] + ".";
+    console.log "Currently serving " + currentLine[0] + ".";
     currentLine.shift(currentLine[0]);
   }
 }
