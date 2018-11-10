@@ -23,5 +23,11 @@ function currentLine(katzDeliLine){
     countdown --;
     i++;
  }
- return `${message}${katzDeliLine}`;
+
+ if(katzDeliLine/length < 1) {
+   return "The line is currently empty"
+ } else {
+    return `${message}${katzDeliLine}`;
+ }
+ 
 }
