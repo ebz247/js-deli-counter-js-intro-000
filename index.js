@@ -19,7 +19,7 @@ function currentLine(katzDeliLine){
  var countdown = katzDeliLine.length
  var i = 0
  while(countdown > 0){
-   katzDeliLine[i] = 1+i + ". " + katzDeliLine[i] + "! ";
+   katzDeliLine[i] = "! " + (1+i) + ". " + katzDeliLine[i];
     countdown --;
     i++;
  }
